@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Days Summer Camp | Enrollment Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <script type="text/javascript" src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+    <script type="text/javascript" src="form.js"></script>
+	<script type="text/javascript" src="ajax_form.js"></script>
+	<link rel="shortcut icon" type="image/png" href="Images/icon.png"/>
+</head>
+
+<body>
+<div id="header">
+    <h1>Enrollment Form -- Happy Days Summer Camp</h1>
+</div>
+<div>
+    <div id="nav">
+        <a href="index.html">Home</a><br>
+        <a href="form.html">Enrollment form</a><br>
+        <a href="index.html">Contact us</a><br>
+		<a href="report.php">Report</a><br>
+    </div>
+
+    <div id="section">
+        <form name="personal_info" action="process_request.php" method="post" enctype="multipart/form-data" id="signUpForm">
+
+            <div id="Programs">
+                <fieldset>
+                    <legend id="PLegend">Program Info</legend>
+
+                    <input type="checkbox" name="program[]" id="check1" value="Basketball Camp" />
+                    <label for="check1">Basketball Camp</label>
+
+                    <input type="checkbox" name="program[]" id="check2" value="Baseball Camp" />
+                    <label for="check2">Baseball Camp</label>
+                    <input type="checkbox" name="program[]" id="check3" value="Physical Training" />
+                    <label for="check3">Physical Training</label>
+
+                    <input type="checkbox" name="program[]" id="check4" value="Band Camp" />
+                    <label for="check4">Band Camp</label>
+                    <input type="checkbox" name="program[]" id="check5" value="Swimming" />
+                    <label for="check5">Swimming</label>
+
+                    <input type="checkbox" name="program[]" id="check6" value="Nature Discovery" />
+                    <label for="check6">Nature Discovery</label>
+
+                </fieldset>
+
+            </div>
+            <div id="PInfo">
+                <fieldset>
+                    <legend>Parent or primary guardian Info</legend>
+                    <p>
+                        <label>First Name</label>
+                        <input type="text" name="fname" size="20" required class="name"/>
+                        <label>Middle Name</label>
+                        <input type="text" name="mname" size="20" required class="name"/>
+                        <label>Last Name</label>
+                        <input type="text" name="lname" size="20" required class="name"/>
+                    </p>
+                    <p>
+                        <label class="bigLabel">Relationship to child</label>
+                        <input type="radio" name="relation" id="rel1"  value="mother" required />
+                        <label for= "rel1" class="miniLabel">Mother</label>
+                        <input type="radio" name="relation" id="rel2" value="father" />
+                        <label for= "rel1" class="miniLabel">Father</label>
+                        <input type="radio" name="relation"  id="rel3" value="guardian" />
+                        <label for="rel3" class="miniLabel">Guardian</label>
+                    </p>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Address</label>
+                            </td>
+                            <td>
+                                <input type="text" name="address" size="55" required  placeholder="Apt. No., Street Name"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                <input type="text" name="address1" size="55" />
+                            </td>
+                    </table>
+                    <p>
+                        <label>City</label>
+                        <input type="text" name="city" size="15"  required/>
+                        <label class="miniLabel">State</label>
+                        <select name="state" required >
+                          <option value="">-Select State-</option>
+                          <option value="AL" >Alabama</option>
+                          <option value="AK" >Alaska</option>
+                          <option value="AZ" >Arizona</option>
+                          <option value="AR" >Arkansas</option>
+                          <option value="CA" >California</option>
+                          <option value="CO" >Colorado</option>
+                          <option value="CT" >Connecticut</option>
+                          <option value="DE" >Delaware</option>
+                          <option value="DC" >Dist of Columbia</option>
+                          <option value="FL" >Florida</option>
+                          <option value="GA" >Georgia</option>
+                          <option value="HI" >Hawaii</option>
+                          <option value="ID" >Idaho</option>
+                          <option value="IL" >Illinois</option>
+                          <option value="IN" >Indiana</option>
+                          <option value="IA" >Iowa</option>
+                          <option value="KS" >Kansas</option>
+                          <option value="KY" >Kentucky</option>
+                          <option value="LA" >Louisiana</option>
+                          <option value="ME" >Maine</option>
+                          <option value="MD" >Maryland</option>
+                          <option value="MA" >Massachusetts</option>
+                          <option value="MI" >Michigan</option>
+                          <option value="MN" >Minnesota</option>
+                          <option value="MS" >Mississippi</option>
+                          <option value="MO" >Missouri</option>
+                          <option value="MT" >Montana</option>
+                          <option value="NE" >Nebraska</option>
+                          <option value="NV" >Nevada</option>
+                          <option value="NH" >New Hampshire</option>
+                          <option value="NJ" >New Jersey</option>
+                          <option value="NM" >New Mexico</option>
+                          <option value="NY" >New York</option>
+                          <option value="NC" >North Carolina</option>
+                          <option value="ND" >North Dakota</option>
+                          <option value="OH" >Ohio</option>
+                          <option value="OK" >Oklahoma</option>
+                          <option value="OR" >Oregon</option>
+                          <option value="PA" >Pennsylvania</option>
+                          <option value="RI" >Rhode Island</option>
+                          <option value="SC" >South Carolina</option>
+                          <option value="SD" >South Dakota</option>
+                          <option value="TN" >Tennessee</option>
+                          <option value="TX" >Texas</option>
+                          <option value="UT" >Utah</option>
+                          <option value="VT" >Vermont</option>
+                          <option value="VA" >Virginia</option>
+                          <option value="WA" >Washington</option>
+                          <option value="WV" >West Virginia</option>
+                          <option value="WI" >Wisconsin</option>
+                          <option value="WY" >Wyoming</option>
+                        </select>
+                        <label class="miniLabel">Zip</label>
+                        <input type="text" name="zip" size="5" maxlength="5" required />
+                    </p>
+                    <p>
+                        <label>Home Phone</label>
+                        (<input id="haPhone" type="text" name="home_area_phone" size="3" maxlength="3" />)  &nbsp;&nbsp;
+                        <input  id="hpPhone" type="text" name="home_prefix_phone" size="3" maxlength="3" />  &nbsp;-&nbsp;
+                        <input  type="text"  name="home_phone" size="4" maxlength="4" />&nbsp;&nbsp;
+                        <label>Cell Phone</label>
+                        (<input id="caPhone" type="text" name="cell_area_phone" size="3" maxlength="3"  />)  &nbsp;&nbsp;
+                        <input id="cpPhone" type="text" name="cell_prefix_phone" size="3" maxlength="3" />  &nbsp;-&nbsp;
+                        <input type="text" name="cell_phone" size="4" maxlength="4" required />
+                    </p>
+                    <p>
+                        <label>E-mail</label>
+                        <input type="email" name="email" size="30" required placeholder="Enter a valid email address."/>
+                    </p>
+                </fieldset>
+            </div>
+
+            <div id ="CInfo">
+                <fieldset>
+                    <legend>Child Information</legend>
+                    <p>
+                        <label>First Name</label>
+                        <input type="text" name="cfname" size="20" required class="name"/>
+                        <label>Middle Name</label>
+                        <input type="text" name="cmname" size="20" required class="name"/>
+                        <label>Last Name</label>
+                        <input type="text" name="clname" size="20" required class="name"/>
+                    </p>
+                    <table>
+                        <tr>
+                            <td>
+                                <label class="miniLabel">Goes By</label>
+                            </td>
+                            <td>
+                                <input type="text" name="goesby" size="20" class="name" placeholder=" (Optional)"/>
+                            </td>
+                            <td rowspan="3">
+                                <div class="upload">
+                                    <input type="file" name="fileUpload" id="fileInput" accept="image/jpeg, image/png" required />
+                                    <img  id="fileImage" alt="Img" src="#"/>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label class="miniLabel">Gender</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="gender" id="gender1" value="Female"  required/>
+                                <label for="gender1" class="miniLabel">Female</label>
+                                <input type="radio" name="gender" id="gender2" value="Male" />
+                                <label for="gender2" class="miniLabel">Male</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Date of Birth</label>
+                            </td>
+                            <td>
+                                <input type="text" name="bday"  placeholder=" mm/dd/yyyy" required>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>
+                        <label>Medical Conditions</label>
+                        <textarea rows="3" cols="40" name="conditions" placeholder="Write N/A if not applicable" required></textarea>
+                        <label>Special Diatary Requirements</label>
+                        <textarea rows="3" cols="40" name="diet" placeholder="Write N/A if not applicable" required></textarea>
+                    </p>
+                    <p>
+                        <label class="bigLabel">Secondary Contact Name</label>
+                        <input type="text" name="emeContactname" size="32"  placeholder="First Name & Last Name" class="name"/>
+                        <label class="miniLabel">Phone</label>
+                        (<input id="saPhone" type="text" name="area_phone" size="3" maxlength="3"  required/>)  &nbsp;&nbsp;
+                        <input id="spPhone" type="text" name="prefix_phone" size="3" maxlength="3" required/>  &nbsp;-&nbsp;
+                        <input id="sPhone" type="text" name="phone" size="4" maxlength="4"  required/>
+                    </p>
+                </fieldset>
+            </div>
+            <div id="button_panel">
+                <input class='button' type="reset" value="Clear Data"  />
+                <input class='button' type="button" value="Submit Data" id="submit_button" />
+				<!--<input class='button' value="Submit Data" id="submit_button"  name="do_submit"  />-->
+				<h2 id="status"></h2>
+				<img id="busy_wait" src="Images/loading.gif" />
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>

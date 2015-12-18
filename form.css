@@ -1,0 +1,218 @@
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html, body {
+height: 100%;
+min-width: 500px;
+margin: 0;
+padding: 0;
+}
+
+#header {
+background-color:#17A697;
+color:white;
+text-align:center;
+padding:5px;
+}
+
+#nav {
+top: 0px;
+float:left;
+position:fixed;
+display: block;
+width:180px;
+height:100%;
+line-height:30px;
+background-color:#638CA6;
+padding-top:50px;
+padding-left:20px;
+color:white;
+}
+
+#section {
+margin-left:180px;
+height: 100%;
+padding:10px;
+padding-top: 50px;
+}
+
+#sectionImg {
+width: 400px;
+height: 250px;
+margin-left: 280px;
+}
+
+#section > p {
+margin-left: 100px;
+word-wrap: break-word;
+}
+#section > a {
+margin-left: 450px;
+text-decoration: none; font: menu;
+display: inline-block; padding:10px 8px;
+background: #17A697; color: ButtonText;
+border-style: solid; border-width: 2px;
+border-color: #17A697 ;
+height: 15px;
+width: 100px;
+text-align: center;
+font-family: sans-serif;
+font-size: 20px;
+color:white;
+}
+
+
+body {
+background-color: white;
+}
+
+h1 {
+text-align: center;
+}
+
+fieldset {
+margin-left: auto;
+margin-right: auto;
+padding-top: 12px;
+width: 1056px;
+border: 1px solid black;
+background: #C6D5CD;
+}
+
+legend {
+background-color: #A7DBDB;
+padding: 2px 10px 2px 10px;
+border: 1px dotted gray;
+font-weight: bold;
+}
+
+
+label {
+padding-left: 5px;
+padding-right: 5px;
+margin-left: 5px;
+margin-right: 5px;
+display: inline-block;
+width: 70px;
+}
+
+#Programs {
+margin-bottom: 10px;
+
+}
+
+#Programs > fieldset p{
+margin: 0px;
+}
+
+#Programs > fieldset label{
+margin-top: 2px;
+width: 118px;
+}
+
+#Programs > fieldset {
+list-style-type: none;
+}
+
+
+input {
+font-family: courier;
+border: 1px solid #DDDDDD;
+}
+
+
+#button_panel {
+text-align: center;
+border-top: 1px solid green;
+padding-top: 5px;
+}
+
+.button {
+font-family: sans-serif;
+width: 100px;
+height: 25px;
+background:#17A697;
+border:1px solid #17A697;
+color:white;
+}
+
+#message_line {
+height: 50px;
+color: red;
+font-family: sans-serif;
+font-style: italic;
+padding-left: 50px;
+padding-top: 5px;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+
+#PInfo {
+margin-bottom: 10px;
+}
+
+#PInfo label, #CInfo label {
+/*background-color: #BBCCBB;*/
+padding-left: 5px;
+padding-right: 5px;
+margin-left: 5px;
+margin-right: 5px;
+display: inline-block;
+width: 90px;
+}
+
+
+
+#PInfo > fieldset > p > .miniLabel, #CInfo > fieldset > p > .miniLabel{
+width: 40px;
+}
+#PInfo > fieldset > p > .bigLabel, #CInfo > fieldset > p > .bigLabel{
+width: 170px;
+}
+#CInfo > fieldset > p > textarea{
+padding-left: 5px;
+margin-left: 5px;
+}
+p {
+padding-top: 0px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.upload{
+background-color: #C6D5CD;
+width:225px;
+height:150px;
+margin-left:18px;
+}
+
+#fileImage{
+display : none;
+}
+#fileinput{
+width:225px;
+}
+
+#busy_wait {
+display: block;
+margin: auto;
+visibility: hidden;
+width: 75px;
+}
+
+#confirm  > table {
+align: center;
+margin-left: 350px;
+}
+
+#confirm > table > td {
+width : 300px;
+}
+
+#uploadImg {
+height:200px;
+width: 200px;	
+}
